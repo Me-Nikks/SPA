@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-08 12:36:20.492809",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "quantity",
+  "requested_rate",
+  "actual_price",
+  "approved_rate",
+  "total_wrt_current_price",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "100",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "requested_rate",
+   "fieldtype": "Data",
+   "label": "Requested Rate",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "approved_rate",
+   "fieldtype": "Data",
+   "label": "Approved Rate"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "total_wrt_current_price",
+   "fieldtype": "Float",
+   "label": "Total wrt current price"
+  },
+  {
+   "fieldname": "actual_price",
+   "fieldtype": "Data",
+   "label": "Actual Price",
+   "options": "Item Price"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-08 16:46:47.905361",
+ "modified_by": "Administrator",
+ "module": "spa",
+ "name": "Special Price Approval Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

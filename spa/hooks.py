@@ -247,3 +247,19 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+doc_events = {
+    "Special Price Approval": {
+        "on_update_after_submit":
+            "spa.spa.doctype.special_price_approval.special_price_approval.create_sales_order"
+    }
+}
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "=", "Sales Order"],
+            ["fieldname", "=", "special_price_approval_ref"]
+        ]
+    }
+]
